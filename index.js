@@ -6,7 +6,7 @@ env.config()
 const app = express()
 const cors = require('cors')
 
-const port = process.env.PORT
+const port = 5008 || process.env.PORT
 
 //routes
 const postRoute = require('./src/routes/post.route.js')
@@ -22,7 +22,7 @@ app.use(cors())
 app.use('/api', postRoute)
 
 app.get('/test', (req, res) => {
-  res.send('Welcome to Personal Blog Server')
+  res.send('Welcome to RentEasy Server')
 })
 
 app.listen(port, () => {
