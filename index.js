@@ -6,7 +6,7 @@ env.config()
 const app = express()
 const cors = require('cors')
 
-const port = 5008 || process.env.PORT
+const port = process.env.PORT
 
 //routes
 const postRoute = require('./src/routes/post.route.js')
