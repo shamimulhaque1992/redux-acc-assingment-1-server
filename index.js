@@ -21,7 +21,7 @@ app.use(cors())
 //APIs
 app.use('/api', postRoute)
 
-app.get('/test', (req, res) => {
+app.get('/', (req, res) => {
   res.send('Welcome to RentEasy Server')
 })
 
